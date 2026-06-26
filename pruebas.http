@@ -1,0 +1,38 @@
+### Crear cliente
+POST http://localhost:8080/clientes
+Content-Type: application/json
+
+{
+  "nombre": "Camila",
+  "apellido": "Soto",
+  "correo": "camila@email.com",
+  "telefono": "987654321",
+  "direccion": "Avenida Central 120"
+}
+
+### Listar clientes
+GET http://localhost:8080/clientes
+
+### Buscar cliente por ID
+GET http://localhost:8080/clientes/1
+
+### Crear producto
+POST http://localhost:8080/productos
+Content-Type: application/json
+
+{
+  "nombre": "Teclado",
+  "descripcion": "Teclado USB",
+  "precio": 15990,
+  "stock": 20,
+  "categoria": "Computacion"
+}
+
+### Listar productos
+GET http://localhost:8080/productos
+
+### Buscar producto por ID
+GET http://localhost:8080/productos/1
+
+### Eliminar producto
+DELETE http://localhost:8080/productos/1
